@@ -17,7 +17,7 @@ type Config struct {
 
 func main() {
 	config := Config{}
-	err := configValidator.Validate()
+	err := configValidator.Validate(config)
 
 	if err != nil {
 		log.Fatal(err)
